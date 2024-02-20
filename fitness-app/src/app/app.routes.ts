@@ -9,7 +9,7 @@ export const routes: Routes = [
         title: 'Home Page'
     },
     {
-        path: 'food',
+        path: 'food-list',
         component: FoodComponent,
         title: 'Food List'
     }

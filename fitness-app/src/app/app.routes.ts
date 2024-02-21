@@ -1,16 +1,14 @@
 import { Routes } from '@angular/router';
-import { FoodComponent } from './food/food.component';
-import { FoodEatenComponent } from './food-eaten/food-eaten.component';
+import { FoodEatenComponent } from './home/food-section/food-eaten/food-eaten.component';
+import { FoodListSelectionComponent } from './home/food-section/food-list-selection/food-list-selection.component';
 
 export const routes: Routes = [
-    {
-        path: '',
-        component: FoodEatenComponent,
-        title: 'Home Page'
-    },
-    {
-        path: 'food-list',
-        component: FoodComponent,
-        title: 'Food List'
-    }
+  {
+    path: '',
+    component: FoodEatenComponent,
+  },
+  {
+    path: 'Food-List-Selection',
+    component: FoodListSelectionComponent
+  },
 ];

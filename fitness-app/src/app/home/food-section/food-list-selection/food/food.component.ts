@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Food } from '../../../../food';
 
 @Component({
@@ -10,4 +10,11 @@ import { Food } from '../../../../food';
 })
 export class FoodComponent {
   @Input() food! : Food;
+
+  @Output()
+  addedToEatenList : EventEmitter<Food> = new EventEmitter<Food>();
+
+  addToEatenList() {
+    this.addedToEatenList.emit(this.food);
+  }
 }

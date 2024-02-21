@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Food } from '../../../food';
 
 @Component({
   selector: 'app-food-eaten',
@@ -9,5 +10,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './food-eaten.component.css'
 })
 export class FoodEatenComponent {
-
+  foodEatenList : Food[] = [];
 }

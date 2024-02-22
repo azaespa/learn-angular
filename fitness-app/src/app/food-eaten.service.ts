@@ -16,4 +16,14 @@ export class FoodEatenService {
   getFoodEatenList(): Food[] {
     return this.foodEatenList;
   }
+
+  getFoodEatenListLength() {
+    return this.foodEatenList.length;
+  }
+
+  removeFoodFromEatenList(food: Food) {
+    console.log(this.foodEatenList);
+    this.foodEatenList = this.foodEatenList.filter((f) => f != food);
+    console.log(this.foodEatenList);
+  }
 }

@@ -1,4 +1,4 @@
 <a [routerLink]="['Food-List-Selection']">Select Food</a>
 @for (foodEaten of foodEatenList; track foodEaten.id) {
-<app-food-eaten [foodEaten]="foodEaten"></app-food-eaten>
+<app-food-eaten [foodEaten]="foodEaten" (removeFromFoodEatenList)="removeFoodFromEatenList($event)"></app-food-eaten>
 }

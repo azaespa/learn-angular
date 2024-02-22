@@ -19,4 +19,8 @@ export class FoodEatenListComponent {
   constructor() {
     this.foodEatenList = this.foodEatenService.getFoodEatenList();
   }
+
+  removeFoodFromEatenList(food: Food) {
+    this.foodEatenService.removeFoodFromEatenList(food);
+  }
 }

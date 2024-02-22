@@ -24,6 +24,5 @@ export class FoodListSelectionComponent {
 
   setFoodEatenList(food: Food) {
     this.foodEatenService.setFoodEatenList(food);
-    console.log(this.foodEatenService.getFoodEatenList());
   }
 }

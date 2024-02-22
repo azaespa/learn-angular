@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
-import { FoodEatenComponent } from './food-eaten/food-eaten.component';
 import { FoodListSelectionComponent } from './food-list-selection/food-list-selection.component';
 import { RouterOutlet } from '@angular/router';
+import { FoodEatenListComponent } from './food-eaten-list/food-eaten-list.component';
 
 @Component({
   selector: 'app-food-section',
   standalone: true,
-  imports: [FoodEatenComponent, FoodListSelectionComponent, RouterOutlet],
+  imports: [FoodEatenListComponent, FoodListSelectionComponent, RouterOutlet],
   templateUrl: './food-section.component.html',
-  styleUrl: './food-section.component.css'
+  styleUrl: './food-section.component.css',
 })
-export class FoodSectionComponent {
-
-}
+export class FoodSectionComponent {}

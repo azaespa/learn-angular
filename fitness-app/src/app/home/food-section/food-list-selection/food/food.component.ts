@@ -6,15 +6,15 @@ import { Food } from '../../../../food';
   standalone: true,
   imports: [],
   templateUrl: './food.component.html',
-  styleUrl: './food.component.css'
+  styleUrl: './food.component.css',
 })
 export class FoodComponent {
-  @Input() food! : Food;
+  @Input() food!: Food;
 
   @Output()
-  addedToEatenList : EventEmitter<Food> = new EventEmitter<Food>();
+  addToFoodEatenList: EventEmitter<Food> = new EventEmitter<Food>();
 
-  addToEatenList() {
-    this.addedToEatenList.emit(this.food);
+  onAddToFoodEatenList() {
+    this.addToFoodEatenList.emit(this.food);
   }
 }

@@ -1,4 +1,4 @@
 <a [routerLink]="['']">Back</a>
 @for (food of foodList; track food.id) {
-    <app-food [food]="food"></app-food>
+<app-food [food]="food" (addToFoodEatenList)="setFoodEatenList($event)"></app-food>
 }
